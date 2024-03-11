@@ -4,15 +4,14 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider, Grid, Button, Box } from '@mui/material';
-import proPic from '../FullSizeR.jpg';
-import howdyHack from '../DSCF1734 (1).JPG';
-import "./in-development.css";
+import proPic from '../pictures/FullSizeR.jpg';
+import howdyHack from '../pictures/DSCF1734 (1).JPG';
 
 function Header() {
   const navigate = useNavigate();
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" className="header">
+      <AppBar position="static">
         <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
           <Grid container justifyContent='space-between' alignItems='center'>
             <Grid item>
