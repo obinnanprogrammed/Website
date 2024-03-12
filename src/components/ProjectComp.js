@@ -5,7 +5,7 @@ import { Box, Link } from '@mui/material'
 function ProjectComp({ image, title, description, links }) {
     return (
         <Box m={2} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px' }}>
-            {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '50%', height: '200px' }} />}
+            {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 {title && <Typography variant="h4" style={{ textAlign: "center" }}>{title}</Typography>}
                 {description && <Typography variant="body1" style={{ textAlign: "center" }}>{description}</Typography>}

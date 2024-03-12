@@ -8,7 +8,8 @@ function LinkComp({ icon, title, link }) {
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                 <Link href={link} target="_blank" rel="noopener noreferrer">
                     {icon && <img src={icon} alt={title} 
-                    style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '60%', height: '200px' }} />}
+                    style={{ display: "block", marginLeft: "auto", marginRight: "auto", 
+                    width: '60%', height: '200px' }} />}
                 </Link>
                 <Typography variant="h5" style={{ textAlign: "center" }}>{title}</Typography>
             </Box>
