@@ -2,29 +2,28 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Header from './Header.js';
 import Highlight from './Highlight.js';
-import website from '../pictures/website.jpg';
+import website from '../pictures/website.png';
+import npcroom from '../pictures/npcroom.png';
+import swipeTern from '../pictures/swipetern.png';
 import { Box } from '@mui/material';
 
 function Home() {
     return (
         <>
             <Header />
-            <Typography variant="h3" style={{ textAlign: "center" }}>welcome, you awesome person!</Typography>
+            <Typography variant="h3" style={{ color: "white", textAlign: "center" }}>welcome, you awesome person!</Typography>
             <Typography variant="h5" m={2}
-                style={{ fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
+                style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-                <Highlight header="Website in development!" image={website} alt="Obinna Nwakwue's website"
-                    text="My website is currently in development!" date="10 March 2024" />
-                <Highlight header="Website in development!" image={website} alt="Obinna Nwakwue's website"
-                    text="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
-                    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
-                    magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem 
-                    ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                     Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
-                     molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" 
-                     date="1 January 1900" />
+                <Highlight header="Website launched!" image={website} alt="Obinna Nwakwue's website"
+                    text="I have launched my website! Come see my projects, accomplishments, and aspirations!" date="12 March 2024" />
+                <Highlight header="Season 2 of NPCRoom!" image={npcroom} alt="NPCRoom!"
+                    text="I began the second round of my signature Aggie Coding Club project, NPCRoom! This time, it is a learning-based project
+                    where students will learn full-stack web development with React, Java, Spring Boot, and MongoDB!" date="23 February 2024" />
+                <Highlight header="TAMUhack X!" image={swipeTern} alt="TAMUhack X!"
+                    text="I competed in the tenth anniversary TAMUhack competition alongside my friends Peter Phan, Sophia Phu, and Jyo Madhavarapu.
+                    Together we created SwipeTern, an app that allows students and internship recruiters to swipe on each other, match, and communicate easier." date="27-28 January 2024" />
             </Box>
-            
         </>
     )
 }

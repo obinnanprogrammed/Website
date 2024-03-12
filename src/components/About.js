@@ -8,7 +8,7 @@ function About() {
     return (
         <>
             <Header />
-            <Typography variant="h3" style={{ textAlign: "center", textDecoration: "underline", fontStyle: "italic"}}>
+            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", textDecoration: "underline", fontStyle: "italic"}}>
                 ABOUT
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -19,7 +19,7 @@ function About() {
                         is to use software development to help with education.
                     </Typography>
                     <Typography variant="body1">
-                        Currently, he is involved in Aggie Coding Club, where he is in his second semester as A
+                        Currently, he is involved in Aggie Coding Club, where he is in his second semester as a
                         Project Manager. His project, NPCRoom, teaches students about full stack web development 
                         using React, Java, Spring Boot, and MongoDB. He is also a member of Texas A&M Computing Society
                         (Texas A&M's student chapter of the Assocation for Computing Machinery) as well as the Texas A&M
@@ -29,8 +29,8 @@ function About() {
                         In addition to NPCRoom, Obinna has worked on several other software development projects.
                         Notably, he helped develop Reveille Rewards, the winner of the "Best Small Business Hack"
                         at HowdyHack 2023. The web app rewards users for shopping at small businesses. He is currently
-                        working on two more notable projects and looks to expand his skillset and knowledge in the field
-                        of software development and computer science as a whole.
+                        working on two more notable projects. He is looking to expand his development skillset and knowledge of the
+                        field of computer science. He is also open to internships and co-op opportunities.
                     </Typography>
                     <Typography variant="body1">
                         Outside of computer science, Obinna enjoys music and Pokémon.
