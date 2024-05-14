@@ -1,10 +1,10 @@
 body {
   margin: 0;
   font-family: 'Maven Pro';
-  color: black;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom, #0E4FF6, green);
+  background: linear-gradient(to bottom, #0E4FF6, #3202A2);
 }
 
 code {

@@ -4,7 +4,7 @@ import { Box, Link, Button, Card, CardContent } from '@mui/material'
 
 function ProjectComp({ image, title, description, links, techStack }) {
     return (
-        <Card mr={2} sx={{ backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card mr={2} sx={{ backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #931CAA 30%, #580AEA 90%)', margin: '16px', padding: '16px', borderRadius: '10px' }}>
             <CardContent>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '16px' }}>
                     {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}

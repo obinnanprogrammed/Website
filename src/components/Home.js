@@ -11,7 +11,7 @@ function Home() {
     return (
         <>
             <Header />
-            <Typography variant="h3" style={{ color: "white", textAlign: "center" }}>welcome, you awesome person!</Typography>
+            <Typography variant="h3" style={{ color: "white", textAlign: "center", margin: '3%'}}>welcome, you awesome person!</Typography>
             <Typography variant="h5" m={2}
                 style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>

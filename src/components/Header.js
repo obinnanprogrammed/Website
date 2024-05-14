@@ -11,7 +11,7 @@ function Header() {
   const navigate = useNavigate();
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "#0E4FF6"}} elevation="0">
         <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
           <Grid container justifyContent='space-between' alignItems='center'>
             <Grid item>
@@ -29,13 +29,13 @@ function Header() {
           </Grid>
         </Toolbar>
       </AppBar>
-      <AppBar position="static" color="default" style={{ backgroundColor: "#D9D9D9" }}>
+      <AppBar position="static" color="default" style={{ backgroundColor: "#0E4FF6" }} elevation="0">
         <Toolbar alignItems="center">
           <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
-            <Button color="inherit" onClick={() => { navigate("/"); }}>Home</Button>
-            <Button color="inherit" onClick={() => { navigate("/about"); }}>About</Button>
-            <Button color="inherit" onClick={() => { navigate("/projects"); }}>Projects</Button>
-            <Button color="inherit" onClick={() => { navigate("/links"); }}>Links</Button>
+            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/"); }}>Home</Button>
+            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/about"); }}>About</Button>
+            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/projects"); }}>Projects</Button>
+            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/links"); }}>Links</Button>
           </Box>
         </Toolbar>
       </AppBar>

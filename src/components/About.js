@@ -14,7 +14,7 @@ function About() {
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <Box m={2} sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Typography variant="body1">
-                        Obinna Nwakwue was born in Houston, Texas in January 2005. He is currently a freshman at
+                        Obinna Nwakwue was born in Houston, Texas in January 2005. He is currently a sophomore at
                         Texas A&M University, where he is pursuing a Bachelor's of Science in Computer Science. His goal
                         is to use software development to help with education.
                     </Typography>
