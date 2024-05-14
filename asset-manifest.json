@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f9441eb.css",
-    "main.js": "/static/js/main.0e57f65a.js",
+    "main.css": "/static/css/main.c539369a.css",
+    "main.js": "/static/js/main.5c412ec4.js",
     "static/js/787.c922dae8.chunk.js": "/static/js/787.c922dae8.chunk.js",
     "static/media/DSCF1734 (1).JPG": "/static/media/DSCF1734 (1).a1fc65a1f95a3ceb5cd1.JPG",
     "static/media/swipetern.png": "/static/media/swipetern.ce3576c110fb941abef7.png",
@@ -14,14 +14,14 @@
     "static/media/revrewards.jpg": "/static/media/revrewards.8e8690b331cb6fdeffe7.jpg",
     "static/media/youtube.webp": "/static/media/youtube.480782087e8b4c808dd4.webp",
     "static/media/document.webp": "/static/media/document.4f39a9f9205189229c1e.webp",
-    "static/media/github.svg": "/static/media/github.1f5892e2c4d8d8f51fa1619d7224cdc1.svg",
+    "static/media/github.svg": "/static/media/github.2c10c52fb68265113991ec63b7071a96.svg",
     "index.html": "/index.html",
-    "main.1f9441eb.css.map": "/static/css/main.1f9441eb.css.map",
-    "main.0e57f65a.js.map": "/static/js/main.0e57f65a.js.map",
+    "main.c539369a.css.map": "/static/css/main.c539369a.css.map",
+    "main.5c412ec4.js.map": "/static/js/main.5c412ec4.js.map",
     "787.c922dae8.chunk.js.map": "/static/js/787.c922dae8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f9441eb.css",
-    "static/js/main.0e57f65a.js"
+    "static/css/main.c539369a.css",
+    "static/js/main.5c412ec4.js"
   ]
 }
