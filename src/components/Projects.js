@@ -40,7 +40,7 @@ function Projects() {
     return (
         <>
             <Header />
-            <Typography m={2} style={{ color: "white", textAlign: "center" }} variant="h3">Projects!</Typography>
+            <Typography m={2} style={{ color: "white", textAlign: "center", margin: '3%' }} variant="h3">projects!</Typography>
             <Grid container justifyContent="space-around" alignItems="center" spacing={2} style={{ margin: '0 auto', maxWidth: '100%' }}>
                 <Grid item lg={4} md={6} xs={12}>
                     <ProjectComp image={scaleDict} title="Scale Dictionary" 

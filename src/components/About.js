@@ -8,7 +8,7 @@ function About() {
     return (
         <>
             <Header />
-            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", textDecoration: "underline", fontStyle: "italic"}}>
+            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", textDecoration: "underline", fontStyle: "italic", margin: '3%'}}>
                 ABOUT
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>

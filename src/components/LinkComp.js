@@ -1,16 +1,16 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
-import { Box, Link, Button } from '@mui/material';
+import { Button } from '@mui/material';
 
 
-function LinkComp({ icon: Icon, title, link, backgroundcolor }) {
+function LinkComp({ icon: Icon, title, link, backgroundcolor="#4E58D7" }) {
     return (
         <Button sx={{
             display: 'flex',
             alignItems: 'center',
             overflow: 'hidden',
             padding: '8px',
-            margin: '8px',
+            margin: '64px',
+            bgcolor: '#4E58D7',
             transition: 'width 0.3s, padding 0.3s',
             width: '40px',
             '&:hover': {
