@@ -16,8 +16,19 @@ function Links() {
             <Header />
             <Typography m={2} style={{ color: "white", textAlign: "center" }} variant="h3">While you're here, check out...</Typography>
             <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-                <Box m={2}>
-                    <Grid container spacing={3}>
+                <Box m={2} sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
+                        <LinkComp icon={Github} title="Github" link="https://www.github.com/obinnanprogrammed" backgroundcolor="white" />
+                        <LinkComp icon={Youtube} title="Youtube" link="https://www.youtube.com/channel/UC68UbNT1KakmlH7I4SrSXhA" backgroundcolor="red" />
+                    </Box>
+                    <Box sx={{alignItems: "center", padding: '8px'}}>
+                        <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" backgroundcolor="inherit" />
+                    </Box>
+                    <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
+                        <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1RMiHkp0b16b2tCQ-0u13b5eQYZttUyL4/view?usp=sharing" backgroundcolor="inherit" />
+                        <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="inherit" />
+                    </Box>
+                    {/* <Grid container spacing={3} flexDirection="column">
                         <Grid item>
                             <LinkComp icon={Github} title="Github" link="https://www.github.com/obinnanprogrammed" backgroundcolor="white" />
                         </Grid>
@@ -33,7 +44,7 @@ function Links() {
                         <Grid item>
                             <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="inherit" />
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                 </Box>
                 <Box m={2}>
                     <Typography variant="body1">

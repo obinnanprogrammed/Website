@@ -10,6 +10,7 @@ function LinkComp({ icon: Icon, title, link, backgroundcolor }) {
             alignItems: 'center',
             overflow: 'hidden',
             padding: '8px',
+            margin: '8px',
             transition: 'width 0.3s, padding 0.3s',
             width: '40px',
             '&:hover': {
