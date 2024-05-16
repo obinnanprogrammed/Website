@@ -15,7 +15,7 @@ function LinkComp({ icon: Icon, title, link, backgroundcolor }) {
             '&:hover': {
               width: '120px',
               padding: '8px 16px',
-              bgcolor: {backgroundcolor},
+              bgcolor: backgroundcolor,
               color: 'black'
             },
             '& .MuiSvgIcon-root': {
