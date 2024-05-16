@@ -17,7 +17,7 @@ function Header() {
             <Grid item>
               <div>
                 <Typography variant="h2">Obinna Nwakwue</Typography>
-                <Typography variant="h6">helping others out since 2005</Typography>
+                <Typography variant="h6" style={{ fontStyle: "italic" }}>helping others out since 2005</Typography>
               </div>
             </Grid>
             <Grid item>

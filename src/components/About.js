@@ -16,7 +16,7 @@ function About() {
                     <Typography variant="body1">
                         Obinna Nwakwue was born in Houston, Texas in January 2005. He is currently a sophomore at
                         Texas A&M University, where he is pursuing a Bachelor's of Science in Computer Science. His goal
-                        is to use software development to help with education.
+                        is to use software development to help advance music technology and education.
                     </Typography>
                     <Typography variant="body1">
                         Currently, he is involved in Aggie Coding Club, where he is in his second semester as a
