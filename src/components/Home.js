@@ -5,6 +5,7 @@ import Highlight from './Highlight.js';
 import website from '../pictures/website.png';
 import npcroom from '../pictures/npcroom.png';
 import swipeTern from '../pictures/swipetern.png';
+import npcroomUpdate from '../pictures/login-screen.png';
 import { Box } from '@mui/material';
 
 function Home() {
@@ -15,6 +16,10 @@ function Home() {
             <Typography variant="h5" m={2}
                 style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+                <Highlight header="NPCRoom deployed!" image={npcroomUpdate} alt="NPCRoom login screen"
+                    text="I am proud to announce that my flagship Aggie Coding Club project, NPCRoom, has finally been deployed! I plan to add registration, conversation saving, and more in 
+                    future iterations of the project. Check it out at npcroom.vercel.app (link is in Projects). 
+                    Use username: sample and password: 12345 for login." date="17 May 2024" />
                 <Highlight header="Website launched!" image={website} alt="Obinna Nwakwue's website"
                     text="I have launched my website! Come see my projects, accomplishments, and aspirations!" date="12 March 2024" />
                 <Highlight header="Season 2 of NPCRoom!" image={npcroom} alt="NPCRoom!"

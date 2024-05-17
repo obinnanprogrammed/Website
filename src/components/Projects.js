@@ -23,7 +23,8 @@ function Projects() {
             { url: "https://devpost.com/software/lalala-kzb9fw", text: "Devpost" }
         ],
         npcroom: [
-            { url: "https://www.github.com/obinnanprogrammed/NPCRoom", text: "Github" }
+            { url: "https://www.github.com/obinnanprogrammed/NPCRoom", text: "Github" },
+            { url: "http://npcroom.vercel.app", text: "Website!"}
         ],
         revRewards: [
             { url: "https://www.github.com/TrexKalp/HowdyHack_", text: "Github" },
