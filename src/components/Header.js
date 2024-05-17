@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,6 +9,18 @@ import howdyHack from '../pictures/DSCF1734 (1).JPG';
 
 function Header() {
   const navigate = useNavigate();
+  const [large, setLarge] = useState(window.innerWidth > 1024);
+  const [medium, setMedium] = useState(window.innerWidth > 760);
+
+  const updateSize = () => {
+    setLarge(window.innerWidth > 1024);
+    setMedium(window.innerWidth > 760);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", updateSize);
+    return () => { window.removeEventListener("resize", updateSize); }
+  })
   return (
     <ThemeProvider theme={theme}>
       <AppBar position="static" style={{ backgroundColor: "#0E4FF6"}} elevation="0">
@@ -22,8 +34,8 @@ function Header() {
             </Grid>
             <Grid item>
               <div>
-                <img src={proPic} alt="Obinna Nwakwue" style={{width: '260px', height: '168px'}}/>
-                <img src={howdyHack} alt="Obinna Nwakwue at HowdyHack 2023" style={{width: '260px', height: '168px'}} />
+                {large && <img src={proPic} alt="Obinna Nwakwue" style={{width: '260px', height: '168px'}}/>}
+                {medium && <img src={howdyHack} alt="Obinna Nwakwue at HowdyHack 2023" style={{width: (window.innerWidth > 760 && window.innerWidth < 1024 ? '210px' : '260px'), height: '168px'}} />}
               </div>
             </Grid>
           </Grid>
