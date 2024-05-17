@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c539369a.css",
-    "main.js": "/static/js/main.d2e34e0f.js",
+    "main.js": "/static/js/main.fdc28f5e.js",
     "static/js/787.c922dae8.chunk.js": "/static/js/787.c922dae8.chunk.js",
     "static/media/websitemay2024.png": "/static/media/websitemay2024.088f861cd4418fba6885.png",
     "static/media/DSCF1734 (1).JPG": "/static/media/DSCF1734 (1).a1fc65a1f95a3ceb5cd1.JPG",
@@ -10,6 +10,7 @@
     "static/media/FullSizeR.jpg": "/static/media/FullSizeR.9500f69a4643ffcb86dd.jpg",
     "static/media/jpmc-internship.png": "/static/media/jpmc-internship.ab6358679bd15e613b08.png",
     "static/media/npcroom.png": "/static/media/npcroom.5667a6a5adc35f8a364b.png",
+    "static/media/login-screen.png": "/static/media/login-screen.5bf97a177f7cc544949a.png",
     "static/media/revrewards.jpg": "/static/media/revrewards.8e8690b331cb6fdeffe7.jpg",
     "static/media/icons8-github.svg": "/static/media/icons8-github.5b391347e12ca0d48a30d71948da9d21.svg",
     "index.html": "/index.html",
@@ -18,11 +19,11 @@
     "static/media/email.svg": "/static/media/email.9384cb3df8cf741487353ffe2963fad5.svg",
     "static/media/icons8-youtube.svg": "/static/media/icons8-youtube.0285ae159262eafcd39b793c484aef95.svg",
     "main.c539369a.css.map": "/static/css/main.c539369a.css.map",
-    "main.d2e34e0f.js.map": "/static/js/main.d2e34e0f.js.map",
+    "main.fdc28f5e.js.map": "/static/js/main.fdc28f5e.js.map",
     "787.c922dae8.chunk.js.map": "/static/js/787.c922dae8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c539369a.css",
-    "static/js/main.d2e34e0f.js"
+    "static/js/main.fdc28f5e.js"
   ]
 }
