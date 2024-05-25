@@ -2,17 +2,18 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import Header from './Header.js';
-import proPic from '../pictures/FullSizeR.jpg';
+import ImageCarousel from './ImageCarousel.js';
+//import proPic from '../pictures/FullSizeR.jpg';
 
 function About() {
     return (
         <>
             <Header />
-            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", textDecoration: "underline", fontStyle: "italic", margin: '3%'}}>
-                ABOUT
+            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", margin: '3%'}}>
+                about!
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                <Box m={2} sx={{ display: 'flex', flexDirection: 'column' }}>
+                <Box m={2} sx={{ display: 'flex', flexDirection: 'column', flex: 1, maxWidth: '600px' }}>
                     <Typography variant="body1">
                         Obinna Nwakwue was born in Houston, Texas in January 2005. He is currently a sophomore at
                         Texas A&M University, where he is pursuing a Bachelor's of Science in Computer Science. His goal
@@ -36,7 +37,11 @@ function About() {
                         Outside of computer science, Obinna enjoys music and Pokémon.
                     </Typography>
                 </Box>
-                <img m={2} src={proPic} alt="Obinna Nwakwue" width="40%" height="80%" />
+                {/*<img m={2} src={proPic} alt="Obinna Nwakwue" width="40%" height="80%" /> */}
+                <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1, maxWidth: '600px' }}>
+                    <ImageCarousel />
+                </Box>
+                
             </Box>
         </>
         
