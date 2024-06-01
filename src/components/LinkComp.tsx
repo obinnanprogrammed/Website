@@ -38,7 +38,7 @@ const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#4E58D7" 
               display: 'inline',
             },
           }} href={link} variant="outlined">
-            <img src={icon} />
+            <img src={icon} alt={title+" logo"} />
             <span className="text">{title}</span>
         </Button>
     )
