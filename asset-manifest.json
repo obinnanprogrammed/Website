@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c539369a.css",
-    "main.js": "/static/js/main.1ca3cca2.js",
-    "static/js/787.c922dae8.chunk.js": "/static/js/787.c922dae8.chunk.js",
+    "main.css": "/static/css/main.0a6ef78d.css",
+    "main.js": "/static/js/main.00bdc66a.js",
     "static/media/howdyhack2.jpg": "/static/media/howdyhack2.1df772aa45f7820599b7.jpg",
     "static/media/tamuhack.jpg": "/static/media/tamuhack.533fc9bc8cc1ab012e73.jpg",
     "static/media/websitemay2024.png": "/static/media/websitemay2024.088f861cd4418fba6885.png",
@@ -20,12 +19,11 @@
     "static/media/iconmonstr-linkedin-4.svg": "/static/media/iconmonstr-linkedin-4.033b1683dcd2583d7ff2c6ce56160dac.svg",
     "static/media/email.svg": "/static/media/email.9384cb3df8cf741487353ffe2963fad5.svg",
     "static/media/icons8-youtube.svg": "/static/media/icons8-youtube.0285ae159262eafcd39b793c484aef95.svg",
-    "main.c539369a.css.map": "/static/css/main.c539369a.css.map",
-    "main.1ca3cca2.js.map": "/static/js/main.1ca3cca2.js.map",
-    "787.c922dae8.chunk.js.map": "/static/js/787.c922dae8.chunk.js.map"
+    "main.0a6ef78d.css.map": "/static/css/main.0a6ef78d.css.map",
+    "main.00bdc66a.js.map": "/static/js/main.00bdc66a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c539369a.css",
-    "static/js/main.1ca3cca2.js"
+    "static/css/main.0a6ef78d.css",
+    "static/js/main.00bdc66a.js"
   ]
 }
