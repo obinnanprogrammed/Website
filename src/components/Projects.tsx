@@ -1,14 +1,13 @@
-import React from 'react';
-import Header from './Header.js';
+import Header from './Header';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
-import ProjectComp from './ProjectComp.js';
-import website from '../pictures/websitemay2024.png';
-import scaleDict from '../pictures/scale-dict.png';
-import swipeTern from '../pictures/swipetern.png';
-import npcroom from '../pictures/npcroom.png';
-import revRewards from '../pictures/revrewards.jpg';
-import jpmcInternship from '../pictures/jpmc-internship.png';
+import ProjectComp from './ProjectComp';
+const website = require('../pictures/websitemay2024.png');
+const scaleDict = require('../pictures/scale-dict.png');
+const swipeTern = require('../pictures/swipetern.png');
+const npcroom = require('../pictures/npcroom.png');
+const revRewards = require('../pictures/revrewards.jpg');
+const jpmcInternship = require('../pictures/jpmc-internship.png');
 
 function Projects() {
     const projLinks = {

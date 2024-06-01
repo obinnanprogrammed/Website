@@ -1,16 +1,18 @@
-import { React, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider, Grid, Button, Box } from '@mui/material';
-import proPic from '../pictures/FullSizeR.jpg';
-import howdyHack from '../pictures/DSCF1734 (1).JPG';
+const proPic = require('../pictures/FullSizeR.jpg');
+const howdyHack = require('../pictures/DSCF1734 (1).JPG');
 
-function Header() {
+interface HeaderProps {}
+
+const Header: FC<HeaderProps> = () => {
   const navigate = useNavigate();
-  const [large, setLarge] = useState(window.innerWidth > 1024);
-  const [medium, setMedium] = useState(window.innerWidth > 760);
+  const [large, setLarge] = useState<boolean>(window.innerWidth > 1024);
+  const [medium, setMedium] = useState<boolean>(window.innerWidth > 760);
 
   const updateSize = () => {
     setLarge(window.innerWidth > 1024);
@@ -23,7 +25,7 @@ function Header() {
   })
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" style={{ backgroundColor: "#0E4FF6"}} elevation="0">
+      <AppBar position="static" style={{ backgroundColor: "#0E4FF6"}} elevation={0}>
         <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
           <Grid container justifyContent='space-between' alignItems='center'>
             <Grid item>
@@ -41,8 +43,8 @@ function Header() {
           </Grid>
         </Toolbar>
       </AppBar>
-      <AppBar position="static" color="default" style={{ backgroundColor: "#0E4FF6" }} elevation="0">
-        <Toolbar alignItems="center">
+      <AppBar position="static" color="default" style={{ backgroundColor: "#0E4FF6" }} elevation={0}>
+        <Toolbar sx={{ alignItems: "center"}}>
           <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
             <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/"); }}>Home</Button>
             <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/about"); }}>About</Button>

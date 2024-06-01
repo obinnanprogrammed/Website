@@ -1,15 +1,14 @@
-import React from 'react';
 import Typography from '@mui/material/Typography';
 import { Box, Grid } from '@mui/material';
-import Header from './Header.js';
-import LinkComp from './LinkComp.js';
-import ContactForm from './ContactForm.js';
+import Header from './Header';
+import LinkComp from './LinkComp';
+import ContactForm from './ContactForm';
 
-import {ReactComponent as Github} from '../pictures/icons8-github.svg';
-import {ReactComponent as LinkedIn} from '../pictures/iconmonstr-linkedin-4.svg';
-import {ReactComponent as Youtube} from '../pictures/icons8-youtube.svg';
-import {ReactComponent as Resume} from '../pictures/icons8-document.svg';
-import {ReactComponent as Email} from '../pictures/email.svg';
+const Github: string = require('../pictures/icons8-github.svg').default;
+const LinkedIn: string = require('../pictures/iconmonstr-linkedin-4.svg').default;
+const Youtube: string = require('../pictures/icons8-youtube.svg').default;
+const Resume: string = require('../pictures/icons8-document.svg').default;
+const Email:string = require('../pictures/email.svg').default;
 
 function Links() {
     return (

@@ -1,11 +1,16 @@
-import React from 'react';
+import { FC } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
-import proPic from '../pictures/FullSizeR.jpg';
-import howdyHack2 from '../pictures/howdyhack2.jpg';
-import tamuHack from '../pictures/tamuhack.jpg';
+const proPic = require('../pictures/FullSizeR.jpg');
+const howdyHack2 = require('../pictures/howdyhack2.jpg');
+const tamuHack = require('../pictures/tamuhack.jpg');
 
-function Item({ image, altText }) {
+interface ItemProps {
+    image: string,
+    altText: string
+}
+
+const Item: FC<ItemProps> = ({ image, altText }) => {
     return (
         <Paper>
             <img src={image} alt={altText} style={{ width: '100%', height: 'auto' }} />

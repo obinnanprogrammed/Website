@@ -1,9 +1,17 @@
-import React from 'react';
+import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import { Box, Link, Button, Card, CardContent } from '@mui/material'
 
-function ProjectComp({ image, title, description, links, techStack }) {
-    const frameworkLinks = {
+interface ProjectProps {
+    image: string,
+    title: string,
+    description: string,
+    links: Record<string, string>[],
+    techStack: string[]
+}
+
+const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techStack }) => {
+    const frameworkLinks: Record<string, string> = {
         "React": "https://react.dev/learn",
         "React Native": "https://reactnative.dev/docs/tutorial",
         "MaterialUI": "https://mui.com/material-ui/getting-started/learn/",
@@ -19,7 +27,7 @@ function ProjectComp({ image, title, description, links, techStack }) {
         "Tesseract": "https://nanonets.com/blog/ocr-with-tesseract/"
     }
     return (
-        <Card mr={2} sx={{ backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #931CAA 30%, #580AEA 90%)', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card sx={{ backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #931CAA 30%, #580AEA 90%)', margin: '16px', padding: '16px', borderRadius: '10px' }}>
             <CardContent>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '16px' }}>
                     {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}

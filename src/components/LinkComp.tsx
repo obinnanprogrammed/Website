@@ -1,8 +1,14 @@
-import React from 'react';
+import { FC } from 'react'
 import { Button } from '@mui/material';
 
+interface LinkProps {
+  icon: string,
+  title: string,
+  link: string,
+  backgroundcolor?: string
+}
 
-function LinkComp({ icon: Icon, title, link, backgroundcolor="#4E58D7" }) {
+const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#4E58D7" }) => {
     return (
         <Button sx={{
             display: 'flex',
@@ -32,7 +38,7 @@ function LinkComp({ icon: Icon, title, link, backgroundcolor="#4E58D7" }) {
               display: 'inline',
             },
           }} href={link} variant="outlined">
-            <Icon />
+            <img src={icon} />
             <span className="text">{title}</span>
         </Button>
     )

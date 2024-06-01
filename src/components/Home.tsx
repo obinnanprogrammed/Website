@@ -1,14 +1,17 @@
-import React from 'react';
+import { FC } from 'react';
 import Typography from '@mui/material/Typography';
-import Header from './Header.js';
-import Highlight from './Highlight.js';
-import website from '../pictures/website.png';
-import npcroom from '../pictures/npcroom.png';
-import swipeTern from '../pictures/swipetern.png';
-import npcroomUpdate from '../pictures/login-screen.png';
+import Header from './Header';
+import Highlight from './Highlight';
 import { Box } from '@mui/material';
 
-function Home() {
+const website = require('../pictures/website.png');
+const npcroom = require('../pictures/npcroom.png');
+const swipeTern = require('../pictures/swipetern.png');
+const npcroomUpdate = require('../pictures/login-screen.png');
+
+interface HomeProps{}
+
+const Home: FC<HomeProps> = () => {
     return (
         <>
             <Header />

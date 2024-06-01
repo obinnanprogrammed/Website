@@ -1,14 +1,16 @@
-import React from 'react'
+import { FC } from 'react';
 import { Card, CardContent, Grid, TextField, Button, Typography } from '@mui/material'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-function ContactForm() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+interface ContactProps {}
 
-    const submitEmail = (e) => {
+const ContactForm: FC<ContactProps> = () => {
+    const [name, setName] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
+
+    const submitEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const serviceId = `${process.env.REACT_APP_EMAIL_SERVICE_KEY}`;
         const templateId = `${process.env.REACT_APP_EMAIL_TEMPLATE_KEY}`;

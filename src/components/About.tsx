@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
-import Header from './Header.js';
-import ImageCarousel from './ImageCarousel.js';
-//import proPic from '../pictures/FullSizeR.jpg';
+import Header from './Header';
+import ImageCarousel from './ImageCarousel';
 
-function About() {
+interface AboutProps {}
+const About: FC<AboutProps> = () => {
     return (
         <>
             <Header />

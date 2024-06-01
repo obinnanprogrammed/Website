@@ -1,4 +1,3 @@
-import React from 'react';
 import "./in-development.css";
 
 function InDevelopment() {
