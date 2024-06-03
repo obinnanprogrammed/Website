@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0a6ef78d.css",
-    "main.js": "/static/js/main.00bdc66a.js",
+    "main.js": "/static/js/main.8dd0fc0b.js",
     "static/media/howdyhack2.jpg": "/static/media/howdyhack2.1df772aa45f7820599b7.jpg",
     "static/media/tamuhack.jpg": "/static/media/tamuhack.533fc9bc8cc1ab012e73.jpg",
     "static/media/websitemay2024.png": "/static/media/websitemay2024.088f861cd4418fba6885.png",
@@ -20,10 +20,10 @@
     "static/media/email.svg": "/static/media/email.9384cb3df8cf741487353ffe2963fad5.svg",
     "static/media/icons8-youtube.svg": "/static/media/icons8-youtube.0285ae159262eafcd39b793c484aef95.svg",
     "main.0a6ef78d.css.map": "/static/css/main.0a6ef78d.css.map",
-    "main.00bdc66a.js.map": "/static/js/main.00bdc66a.js.map"
+    "main.8dd0fc0b.js.map": "/static/js/main.8dd0fc0b.js.map"
   },
   "entrypoints": [
     "static/css/main.0a6ef78d.css",
-    "static/js/main.00bdc66a.js"
+    "static/js/main.8dd0fc0b.js"
   ]
 }
