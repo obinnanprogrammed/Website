@@ -23,11 +23,11 @@ function Links() {
                             <LinkComp icon={Youtube} title="Youtube" link="https://www.youtube.com/channel/UC68UbNT1KakmlH7I4SrSXhA" backgroundcolor="red" />
                         </Box>
                         <Box sx={{alignItems: "center", padding: '8px'}}>
-                            <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" />
+                            <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" backgroundcolor="blue" />
                         </Box>
                         <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
-                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1RMiHkp0b16b2tCQ-0u13b5eQYZttUyL4/view?usp=sharing" />
-                            <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" />
+                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1RMiHkp0b16b2tCQ-0u13b5eQYZttUyL4/view?usp=sharing" backgroundcolor="#34ebe8" />
+                            <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="green" />
                         </Box>
                     </Box>
                 </Grid>
