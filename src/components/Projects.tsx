@@ -38,9 +38,9 @@ function Projects() {
         website: [ "React", "MaterialUI", "EmailJS" ],
         scaleDictionary: [ "React Native", "Vexflow", "Expo" ],
         swipeTern: [ "React Native", "Firebase", "Expo" ],
-        npcroom: [ "React", "MaterialUI", "Java", "Spring Boot", "MongoDB" ],
+        npcroom: [ "React", "MaterialUI", "Spring Boot", "MongoDB" ],
         revRewards: [ "React", "ChakraUI", "Django", "Tesseract" ],
-        jpmcInternship: [ "React", "Java", "Spring Boot", "Apache Cassandra" ]
+        jpmcInternship: [ "React", "Spring Boot", "Apache Cassandra" ]
     }
     return (
         <>
