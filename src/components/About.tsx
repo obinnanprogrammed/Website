@@ -1,6 +1,7 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
-import { Box, Link } from '@mui/material';
+import { Box } from '@mui/material';
 import Header from './Header';
 import ImageCarousel from './ImageCarousel';
 
@@ -40,7 +41,7 @@ const About: FC<AboutProps> = () => {
                     </Typography>
                     <Typography variant="body1">
                         Obinna is open to internships, co-op opportunities, and any opportunity to develop his skillset
-                        and knowledge of computer science and music technology. He can be contacted {<Link href="/links">here</Link>}.
+                        and knowledge of computer science and music technology. He can be contacted {<Link to="/links">here</Link>}.
                     </Typography>
                 </Box>
                 {/*<img m={2} src={proPic} alt="Obinna Nwakwue" width="40%" height="80%" /> */}
