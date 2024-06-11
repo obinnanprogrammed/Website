@@ -9,5 +9,11 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist', // Output directory for the build files
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        404: './404.html'
+      }
+    }
   },
 });
