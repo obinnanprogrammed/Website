@@ -22,7 +22,7 @@ const Home: FC<HomeProps> = () => {
                 <Highlight header="NPCRoom deployed!" image={npcroomUpdate} alt="NPCRoom login screen"
                     text="I am proud to announce that my flagship Aggie Coding Club project, NPCRoom, has finally been deployed! I plan to add registration, conversation saving, and more in 
                     future iterations of the project. Check it out at npcroom.vercel.app (link is in Projects). 
-                    Use username: sample and password: 12345 for login." date="17 May 2024" />
+                    Use username: sample and password: 12345 for login. Registration support will be added at a later time." date="17 May 2024" />
                 <Highlight header="Website launched!" image={website} alt="Obinna Nwakwue's website"
                     text="I have launched my website! Come see my projects, accomplishments, and aspirations!" date="12 March 2024" />
                 <Highlight header="Season 2 of NPCRoom!" image={npcroom} alt="NPCRoom!"
