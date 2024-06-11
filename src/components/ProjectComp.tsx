@@ -27,7 +27,7 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
         "Tesseract": "https://nanonets.com/blog/ocr-with-tesseract/"
     }
     return (
-        <Card sx={{ backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #931CAA 30%, #580AEA 90%)', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card sx={{ backgroundColor: '#4E58D7', margin: '16px', padding: '16px', borderRadius: '10px' }}>
             <CardContent>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '16px' }}>
                     {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}
@@ -35,16 +35,16 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: '5%' }}>
                             {techStack.map((framework, index) => (
                                 <Button sx={{ display: "flex", justifyContent: "center", 
-                                    textAlign: "center", whiteSpace: "normal", wordWrap: "break-word" }} key={index} 
+                                    textAlign: "center", whiteSpace: "normal", wordWrap: "break-word", margin: '4px' }} key={index} 
                                     variant="contained" href={frameworkLinks[framework]}>{framework}</Button>
                             ))}
                         </Box>
-                        {title && <Typography variant="h4" style={{ textAlign: "center" }}>{title}</Typography>}
-                        {description && <Typography variant="body1" style={{ position: 'relative', textAlign: "center", marginLeft: '10%', marginRight: '10%' }}>{description}</Typography>}
+                        {title && <Typography variant="h4" style={{ textAlign: "center", color: "white" }}>{title}</Typography>}
+                        {description && <Typography variant="body1" style={{ position: 'relative', textAlign: "center", marginLeft: '10%', marginRight: '10%', color: "white" }}>{description}</Typography>}
                         {links && (
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             {links.map((link, index) => (
-                            <Link style={{color: "white", textDecoration: "underline", textAlign: "center" }} key={index} 
+                            <Link style={{color: "black", textDecoration: "underline", textAlign: "center" }} key={index} 
                             href={link.url} target="_blank" rel="noopener noreferrer">
                                 {link.text}
                             </Link>
