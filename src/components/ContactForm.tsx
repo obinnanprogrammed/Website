@@ -12,9 +12,9 @@ const ContactForm: FC<ContactProps> = () => {
 
     const submitEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const serviceId = `${process.env.REACT_APP_EMAIL_SERVICE_KEY}`;
-        const templateId = `${process.env.REACT_APP_EMAIL_TEMPLATE_KEY}`;
-        const publicKey = `${process.env.REACT_APP_EMAIL_PUBLIC_KEY}`;
+        const serviceId = `${process.env.VITE_EMAIL_SERVICE_KEY}`;
+        const templateId = `${process.env.VITE_EMAIL_TEMPLATE_KEY}`;
+        const publicKey = `${process.env.VITE_EMAIL_PUBLIC_KEY}`;
 
         emailjs.send(serviceId, templateId, {
             sender_name: name,
