@@ -44,7 +44,6 @@ const About: FC<AboutProps> = () => {
                         and knowledge of computer science and music technology. He can be contacted {<Link to="/links">here</Link>}.
                     </Typography>
                 </Box>
-                {/*<img m={2} src={proPic} alt="Obinna Nwakwue" width="40%" height="80%" /> */}
                 <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1, maxWidth: '600px' }}>
                     <ImageCarousel />
                 </Box>
