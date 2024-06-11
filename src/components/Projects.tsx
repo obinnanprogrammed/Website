@@ -49,7 +49,7 @@ function Projects() {
             <Grid container justifyContent="space-around" alignItems="center" spacing={2} style={{ margin: '0 auto', maxWidth: '100%' }}>
                 <Grid item lg={4} md={6} xs={12}>
                     <ProjectComp image={website} title="My Website" 
-                    description="My personal website, where my projects, accomplishments, and aspirations are stored." 
+                    description="My personal website, where my projects, accomplishments, and aspirations are displayed." 
                     links={projLinks.website} techStack={projStacks.website} />
                 </Grid>
                 <Grid item lg={4} md={6} xs={12}>
