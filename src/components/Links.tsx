@@ -26,7 +26,7 @@ function Links() {
                             <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" backgroundcolor="blue" />
                         </Box>
                         <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
-                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1RMiHkp0b16b2tCQ-0u13b5eQYZttUyL4/view?usp=sharing" backgroundcolor="#34ebe8" />
+                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1C-5Sip8R5dNCuz50Sv3zeNpPrOORugdZ/view?usp=sharing" backgroundcolor="#34ebe8" />
                             <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="green" />
                         </Box>
                     </Box>
