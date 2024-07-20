@@ -24,7 +24,9 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
         "EmailJS": "https://www.emailjs.com/docs/tutorial/overview/",
         "Expo": "https://docs.expo.dev/tutorial/create-your-first-app/",
         "Vexflow": "https://github.com/0xfe/vexflow/wiki/Tutorial",
-        "Tesseract": "https://nanonets.com/blog/ocr-with-tesseract/"
+        "Tesseract": "https://nanonets.com/blog/ocr-with-tesseract/",
+        "Node.js": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+        "Express": "https://expressjs.com/en/starter/installing.html"
     }
     return (
         <Card sx={{ backgroundColor: '#4E58D7', margin: '16px', padding: '16px', borderRadius: '10px' }}>

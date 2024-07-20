@@ -36,7 +36,7 @@ function Projects() {
 
     const projStacks = {
         website: [ "React", "MaterialUI", "EmailJS" ],
-        scaleDictionary: [ "React Native", "Vexflow", "Expo" ],
+        scaleDictionary: [ "React Native", "Vexflow", "Express", "Node.js" ],
         swipeTern: [ "React Native", "Firebase", "Expo" ],
         npcroom: [ "React", "MaterialUI", "Spring Boot", "MongoDB" ],
         revRewards: [ "React", "ChakraUI", "Django", "Tesseract" ],
