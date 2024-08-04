@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import ProjectComp from './ProjectComp';
 const website = require('../pictures/websitemay2024.png');
-const scaleDict = require('../pictures/scale-dict.png');
+const scalesGalore = require('../pictures/ScalesGalore-logo.png');
 const swipeTern = require('../pictures/swipetern.png');
 const npcroom = require('../pictures/npcroom.png');
 const revRewards = require('../pictures/revrewards.jpg');
@@ -14,8 +14,8 @@ function Projects() {
         website: [
             { url: "https://www.github.com/obinnanprogrammed/Website", text: "Github" }
         ],
-        scaleDictionary: [
-            { url: "https://www.github.com/obinnanprogrammed/ScaleDictionary", text: "Github" }
+        scalesGalore: [
+            { url: "https://www.github.com/obinnanprogrammed/ScalesGalore", text: "Github" }
         ],
         swipeTern: [
             { url: "https://www.github.com/obinnanprogrammed/tamuhack2024", text: "Github"},
@@ -36,7 +36,7 @@ function Projects() {
 
     const projStacks = {
         website: [ "React", "MaterialUI", "EmailJS" ],
-        scaleDictionary: [ "React Native", "Vexflow", "Express", "Node.js" ],
+        scalesGalore: [ "React Native", "Vexflow", "Express", "Node.js" ],
         swipeTern: [ "React Native", "Firebase", "Expo" ],
         npcroom: [ "React", "MaterialUI", "Spring Boot", "MongoDB" ],
         revRewards: [ "React", "ChakraUI", "Django", "Tesseract" ],
@@ -53,9 +53,9 @@ function Projects() {
                     links={projLinks.website} techStack={projStacks.website} />
                 </Grid>
                 <Grid item lg={4} md={6} xs={12}>
-                    <ProjectComp image={scaleDict} title="Scale Dictionary" 
+                    <ProjectComp image={scalesGalore} title="Scale Dictionary" 
                     description="An interactive scale dictionary for beginning musicians. Currently in the works." 
-                    links={projLinks.scaleDictionary} techStack={projStacks.scaleDictionary} />
+                    links={projLinks.scalesGalore} techStack={projStacks.scalesGalore} />
                 </Grid>
                 <Grid item lg={4} md={6} xs={12}>
                     <ProjectComp image={swipeTern} title="SwipeTern" 

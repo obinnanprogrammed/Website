@@ -30,7 +30,7 @@ const ContactForm: FC<ContactProps> = () => {
         )
     }
     return (
-        <Card sx={{ backgroundColor: '#4E58D7', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card sx={{ backgroundColor: '#00008B', margin: '16px', padding: '16px', borderRadius: '10px' }}>
             <CardContent>
                 <form onSubmit={submitEmail}>
                     <Grid container spacing={1} sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
@@ -47,7 +47,7 @@ const ContactForm: FC<ContactProps> = () => {
                             <TextField label="Message" placeholder="Message" variant="outlined" multiline rows={6} fullWidth required  onChange={(e) => setMessage(e.target.value)} />
                         </Grid>
                         <Grid item>
-                            <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
+                            <Button type="submit" variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} fullWidth>Submit</Button>
                         </Grid>
                     </Grid>
                 </form>

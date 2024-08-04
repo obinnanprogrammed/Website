@@ -29,14 +29,14 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
         "Express": "https://expressjs.com/en/starter/installing.html"
     }
     return (
-        <Card sx={{ backgroundColor: '#4E58D7', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card sx={{ backgroundColor: '#00008B', margin: '16px', padding: '16px', borderRadius: '10px' }}>
             <CardContent>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '16px' }}>
                     {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}
                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: '5%' }}>
                             {techStack.map((framework, index) => (
-                                <Button sx={{ display: "flex", justifyContent: "center", 
+                                <Button sx={{ bgcolor: "#FFAE42", color: "black", display: "flex", justifyContent: "center", 
                                     textAlign: "center", whiteSpace: "normal", wordWrap: "break-word", margin: '4px' }} key={index} 
                                     variant="contained" href={frameworkLinks[framework]}>{framework}</Button>
                             ))}
@@ -46,7 +46,7 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
                         {links && (
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                             {links.map((link, index) => (
-                            <Link style={{color: "black", textDecoration: "underline", textAlign: "center" }} key={index} 
+                            <Link style={{color: "white", textDecoration: "underline", textAlign: "center" }} key={index} 
                             href={link.url} target="_blank" rel="noopener noreferrer">
                                 {link.text}
                             </Link>

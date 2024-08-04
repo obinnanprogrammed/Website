@@ -8,7 +8,7 @@ interface LinkProps {
   backgroundcolor?: string
 }
 
-const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#4E58D7" }) => {
+const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#FFAE42" }) => {
     return (
         <Button sx={{
             display: 'flex',
@@ -16,7 +16,7 @@ const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#4E58D7" 
             overflow: 'hidden',
             padding: '8px',
             margin: '64px',
-            bgcolor: '#4E58D7',
+            bgcolor: '#FFAE42',
             transition: 'width 0.3s, padding 0.3s',
             width: '40px',
             '&:hover': {

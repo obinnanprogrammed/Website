@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider, Button, Box } from '@mui/material';
-const logo = require('../pictures/logo3.png');
+const logo = require('../pictures/logo.png');
 
 interface HeaderProps {}
 
@@ -24,7 +24,7 @@ const Header: FC<HeaderProps> = () => {
   })
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" style={{ backgroundColor: "#0E4FF6"}} elevation={0}>
+      <AppBar position="static" style={{ backgroundColor: "rgb(0, 0, 55)"}} elevation={0}>
         <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
           <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
             <img src={logo} alt="Obinna Nwakwue logo" style={{ width: '20%', height: '20%' }} />
@@ -35,13 +35,13 @@ const Header: FC<HeaderProps> = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      <AppBar position="static" color="default" style={{ backgroundColor: "#0E4FF6" }} elevation={0}>
+      <AppBar position="static" color="default" style={{ backgroundColor: "rgb(0, 0, 55)" }} elevation={0}>
         <Toolbar sx={{ alignItems: "center"}}>
           <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
-            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/"); }}>Home</Button>
-            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/about"); }}>About</Button>
-            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/projects"); }}>Projects</Button>
-            <Button color="inherit" variant="outlined" sx={{ ':hover': { bgcolor: '#F5F5DC', color: 'black' } }} onClick={() => { navigate("/links"); }}>Links</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/"); }}>Home</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/about"); }}>About</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/projects"); }}>Projects</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/links"); }}>Links</Button>
           </Box>
         </Toolbar>
       </AppBar>
