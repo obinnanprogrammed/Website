@@ -28,7 +28,7 @@ export default function ProjectComp({ image, title, description, links, techStac
         "Express": "https://expressjs.com/en/starter/installing.html"
     }
     return (
-        <Card sx={{ backgroundColor: '#00008B', margin: '16px', padding: '16px', borderRadius: '10px' }}>
+        <Card sx={{ backgroundColor: '#000060', margin: '16px', padding: '16px', borderRadius: '10px', boxShadow: 10 }}>
             <CardContent>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '16px' }}>
                     {image && <img src={image} alt={title} style={{ display: "block", marginLeft: "auto", marginRight: "auto", width: '80%', height: '200px', borderRadius: '10%' }} />}

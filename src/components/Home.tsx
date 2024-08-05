@@ -15,7 +15,7 @@ export default function Home() {
             <Typography variant="h3" style={{ color: "white", textAlign: "center", margin: '3%', fontWeight: "bold" }}>welcome, you awesome person!</Typography>
             <Typography variant="h5" m={2}
                 style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px', marginRight: '24px', marginBottom: '12px' }}>
                 <Highlight header="NPCRoom deployed!" image={npcroomUpdate} alt="NPCRoom login screen"
                     text="I am proud to announce that my flagship Aggie Coding Club project, NPCRoom, has finally been deployed! I plan to add registration, conversation saving, and more in 
                     future iterations of the project. Check it out at npcroom.vercel.app (link is in Projects). 

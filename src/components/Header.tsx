@@ -37,10 +37,10 @@ export default function Header() {
       <AppBar position="static" color="default" style={{ backgroundColor: "rgb(0, 0, 55)" }} elevation={0}>
         <Toolbar sx={{ alignItems: "center"}}>
           <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/"); }}>Home</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/about"); }}>About</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/projects"); }}>Projects</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} onClick={() => { navigate("/links"); }}>Links</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/"); }}>Home</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/about"); }}>About</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/projects"); }}>Projects</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/links"); }}>Links</Button>
           </Box>
         </Toolbar>
       </AppBar>
