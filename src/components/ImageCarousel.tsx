@@ -1,16 +1,15 @@
-import { FC } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
 const proPic = require('../pictures/FullSizeR.jpg');
 const howdyHack2 = require('../pictures/howdyhack2.jpg');
 const tamuHack = require('../pictures/tamuhack.jpg');
 
-interface ItemProps {
+type ItemProps = {
     image: string,
     altText: string
 }
 
-const Item: FC<ItemProps> = ({ image, altText }) => {
+function Item({ image, altText }: ItemProps) {
     return (
         <Paper>
             <img src={image} alt={altText} style={{ width: '100%', height: 'auto' }} />
@@ -18,7 +17,7 @@ const Item: FC<ItemProps> = ({ image, altText }) => {
     )
 }
 
-function ImageCarousel() {
+export default function ImageCarousel() {
     const items = [
         {
             img: proPic,
@@ -39,5 +38,3 @@ function ImageCarousel() {
         </Carousel>
     )
 }
-
-export default ImageCarousel;

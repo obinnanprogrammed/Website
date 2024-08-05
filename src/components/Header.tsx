@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -6,9 +6,8 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider, Button, Box } from '@mui/material';
 const logo = require('../pictures/logo.png');
 
-interface HeaderProps {}
 
-const Header: FC<HeaderProps> = () => {
+export default function Header() {
   const navigate = useNavigate();
   const [large, setLarge] = useState<boolean>(window.innerWidth > 1024);
   const [medium, setMedium] = useState<boolean>(window.innerWidth > 760);
@@ -54,5 +53,3 @@ const theme = createTheme({
     fontFamily: "Maven Pro"
   }
 });
-
-export default Header;

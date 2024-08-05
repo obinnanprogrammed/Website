@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import Header from './Header';
 import Highlight from './Highlight';
@@ -9,13 +8,11 @@ const npcroom = require('../pictures/npcroom.png');
 const swipeTern = require('../pictures/swipetern.png');
 const npcroomUpdate = require('../pictures/login-screen.png');
 
-interface HomeProps{}
-
-const Home: FC<HomeProps> = () => {
+export default function Home() {
     return (
         <>
             <Header />
-            <Typography variant="h3" style={{ color: "white", textAlign: "center", margin: '3%'}}>welcome, you awesome person!</Typography>
+            <Typography variant="h3" style={{ color: "white", textAlign: "center", margin: '3%', fontWeight: "bold" }}>welcome, you awesome person!</Typography>
             <Typography variant="h5" m={2}
                 style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
@@ -35,5 +32,3 @@ const Home: FC<HomeProps> = () => {
         </>
     )
 }
-
-export default Home;

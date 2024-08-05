@@ -1,8 +1,7 @@
-import { FC } from 'react';
 import Typography from '@mui/material/Typography';
 import { Box, Link, Button, Card, CardContent } from '@mui/material'
 
-interface ProjectProps {
+type ProjectProps = {
     image: string,
     title: string,
     description: string,
@@ -10,7 +9,7 @@ interface ProjectProps {
     techStack: string[]
 }
 
-const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techStack }) => {
+export default function ProjectComp({ image, title, description, links, techStack }: ProjectProps) {
     const frameworkLinks: Record<string, string> = {
         "React": "https://react.dev/learn",
         "React Native": "https://reactnative.dev/docs/tutorial",
@@ -59,5 +58,3 @@ const ProjectComp: FC<ProjectProps> = ({ image, title, description, links, techS
         </Card>
     )
 }
-
-export default ProjectComp;

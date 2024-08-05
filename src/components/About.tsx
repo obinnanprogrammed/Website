@@ -1,17 +1,15 @@
-import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material';
 import Header from './Header';
 import ImageCarousel from './ImageCarousel';
 
-interface AboutProps {}
-const About: FC<AboutProps> = () => {
+export default function About() {
     return (
         <>
             <Header />
-            <Typography m={2} variant="h3" style={{ color: "white", textAlign: "center", margin: '3%'}}>
-                about!
+            <Typography m={2} variant="h3" style={{ color: "white", fontWeight: "bold", textAlign: "center", margin: '3%'}}>
+                about me!
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <Box m={2} sx={{ display: 'flex', flexDirection: 'column', flex: 1, maxWidth: '600px' }}>
@@ -53,5 +51,3 @@ const About: FC<AboutProps> = () => {
         
     )
 }
-
-export default About;

@@ -1,11 +1,8 @@
-import { FC } from 'react';
 import { Card, CardContent, Grid, TextField, Button, Typography } from '@mui/material'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-interface ContactProps {}
-
-const ContactForm: FC<ContactProps> = () => {
+export default function ContactForm() {
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [message, setMessage] = useState<string>("");
@@ -55,5 +52,3 @@ const ContactForm: FC<ContactProps> = () => {
         </Card>
     )
 }
-
-export default ContactForm;

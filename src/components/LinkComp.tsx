@@ -1,14 +1,13 @@
-import { FC } from 'react'
 import { Button } from '@mui/material';
 
-interface LinkProps {
+type LinkProps = {
   icon: string,
   title: string,
   link: string,
   backgroundcolor?: string
 }
 
-const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#FFAE42" }) => {
+export default function LinkComp({ icon, title, link, backgroundcolor="#FFAE42" }: LinkProps) {
     return (
         <Button sx={{
             display: 'flex',
@@ -43,5 +42,3 @@ const LinkComp: FC<LinkProps> = ({ icon, title, link, backgroundcolor="#FFAE42" 
         </Button>
     )
 }
-
-export default LinkComp;

@@ -10,11 +10,11 @@ const Youtube: string = require('../pictures/icons8-youtube.svg').default;
 const Resume: string = require('../pictures/icons8-document.svg').default;
 const Email:string = require('../pictures/email.svg').default;
 
-function Links() {
+export default function Links() {
     return (
         <>
             <Header />
-            <Typography m={2} style={{ color: "white", textAlign: "center", margin: '3%' }} variant="h3">while you're here, check out...</Typography>
+            <Typography m={2} style={{ color: "white", fontWeight: "bold", textAlign: "center", margin: '3%' }} variant="h3">while you're here, check out...</Typography>
             <Grid container sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center" }}>
                 <Grid item xs={12} lg={6}>
                     <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
@@ -38,5 +38,3 @@ function Links() {
         </>
     )
 }
-
-export default Links;
