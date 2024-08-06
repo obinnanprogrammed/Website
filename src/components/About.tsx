@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Header from './Header';
+import Footer from './Footer';
 import ImageCarousel from './ImageCarousel';
 
 export default function About() {
@@ -45,8 +45,8 @@ export default function About() {
                 <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1, maxWidth: '600px' }}>
                     <ImageCarousel />
                 </Box>
-                
             </Box>
+            <Footer />
         </>
         
     )

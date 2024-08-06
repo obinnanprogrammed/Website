@@ -14,7 +14,7 @@ type HighlightProps = {
 export default function Highlight({ header, image, alt, text, date }: HighlightProps) {
     return (
         <Box ml={2} sx={{ display: 'inline-flex', flexDirection: 'row', alignItems: 'flex-start', 
-            bgcolor: "#000060", padding: '8px', gap: '8px', borderRadius: '8px', boxShadow: 10 }}>
+            bgcolor: "#000060", padding: '8px', gap: '8px', borderRadius: '8px', boxShadow: '-10px 10px 12px #0000FF' }}>
             {image && <img src={image} alt={alt} style={{ width: '25%', height: '15%' }} />}
             <Box sx={{ display: 'inline-flex', flexDirection: 'column' }}>
                 <Typography variant="body1" style={{ fontStyle: "italic" }}>{date}</Typography>

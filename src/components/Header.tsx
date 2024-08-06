@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { createTheme, ThemeProvider, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, createTheme, ThemeProvider, Button, Box } from '@mui/material';
 const logo = require('../pictures/logo.png');
 
 
@@ -37,10 +34,14 @@ export default function Header() {
       <AppBar position="static" color="default" style={{ backgroundColor: "rgb(0, 0, 55)" }} elevation={0}>
         <Toolbar sx={{ alignItems: "center"}}>
           <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/"); }}>Home</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/about"); }}>About</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/projects"); }}>Projects</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: 10 }} onClick={() => { navigate("/links"); }}>Links</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
+              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/"); }}>Home</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
+              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/about"); }}>About</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
+              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/projects"); }}>Projects</Button>
+            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
+              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/links"); }}>Links</Button>
           </Box>
         </Toolbar>
       </AppBar>

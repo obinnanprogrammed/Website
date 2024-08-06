@@ -1,6 +1,6 @@
 import Header from './Header';
-import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
+import Footer from './Footer';
+import { Grid, Typography } from '@mui/material';
 import ProjectComp from './ProjectComp';
 const website = require('../pictures/websitemay2024.png');
 const scalesGalore = require('../pictures/ScalesGalore-logo.png');
@@ -53,7 +53,7 @@ export default function Projects() {
                     links={projLinks.website} techStack={projStacks.website} />
                 </Grid>
                 <Grid item lg={4} md={6} xs={12}>
-                    <ProjectComp image={scalesGalore} title="Scale Dictionary" 
+                    <ProjectComp image={scalesGalore} title="ScalesGalore!" 
                     description="An interactive scale dictionary for beginning musicians. Currently in the works." 
                     links={projLinks.scalesGalore} techStack={projStacks.scalesGalore} />
                 </Grid>
@@ -81,6 +81,7 @@ export default function Projects() {
                     on React-based UI." links={projLinks.jpmcInternship} techStack={projStacks.jpmcInternship}/>
                 </Grid>
             </Grid>
+            <Footer />
          </>
     )
 }

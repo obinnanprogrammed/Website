@@ -1,6 +1,6 @@
-import Typography from '@mui/material/Typography';
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import Header from './Header';
+import Footer from './Footer';
 import LinkComp from './LinkComp';
 import ContactForm from './ContactForm';
 
@@ -8,7 +8,7 @@ const Github: string = require('../pictures/icons8-github.svg').default;
 const LinkedIn: string = require('../pictures/iconmonstr-linkedin-4.svg').default;
 const Youtube: string = require('../pictures/icons8-youtube.svg').default;
 const Resume: string = require('../pictures/icons8-document.svg').default;
-const Email:string = require('../pictures/email.svg').default;
+const Email: string = require('../pictures/email.svg').default;
 
 export default function Links() {
     return (
@@ -26,7 +26,7 @@ export default function Links() {
                             <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" backgroundcolor="blue" />
                         </Box>
                         <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
-                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/12NZqgqDlrIJkQwEgMZcmV_AeNE3o9fCm/view?usp=sharing" backgroundcolor="#34ebe8" />
+                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1EM7mckwyeCZWzs-f4CbSjcppS1eA0awP/view?usp=sharing" backgroundcolor="#34ebe8" />
                             <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="green" />
                         </Box>
                     </Box>
@@ -35,6 +35,7 @@ export default function Links() {
                     <ContactForm />
                 </Grid>
             </Grid>
+            <Footer />
         </>
     )
 }

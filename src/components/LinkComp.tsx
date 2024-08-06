@@ -16,7 +16,7 @@ export default function LinkComp({ icon, title, link, backgroundcolor="#FFAE42" 
             padding: '8px',
             margin: '64px',
             bgcolor: '#FFAE42',
-            boxShadow: 10,
+            boxShadow: '-5px 5px 8px #0000FF',
             transition: 'width 0.3s, padding 0.3s',
             width: '40px',
             '&:hover': {

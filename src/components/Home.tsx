@@ -1,7 +1,7 @@
-import Typography from '@mui/material/Typography';
 import Header from './Header';
+import Footer from './Footer';
 import Highlight from './Highlight';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const website = require('../pictures/website.png');
 const npcroom = require('../pictures/npcroom.png');
@@ -29,6 +29,7 @@ export default function Home() {
                     text="I competed in the tenth anniversary TAMUhack competition alongside my friends Peter Phan, Sophia Phu, and Jyo Madhavarapu.
                     Together we created SwipeTern, an app that allows students and internship recruiters to swipe on each other, match, and communicate easier." date="27-28 January 2024" />
             </Box>
+            <Footer />
         </>
     )
 }
