@@ -44,7 +44,7 @@ export default function ContactForm() {
                             <TextField label="Message" placeholder="Message" variant="outlined" multiline rows={6} fullWidth required  onChange={(e) => setMessage(e.target.value)} />
                         </Grid>
                         <Grid item>
-                            <Button type="submit" variant="contained" fullWidth>Submit</Button>
+                            <Button type="submit" variant="contained" sx={{ bgcolor: "#FFAE42", color: "black" }} fullWidth>Submit</Button>
                         </Grid>
                     </Grid>
                 </form>

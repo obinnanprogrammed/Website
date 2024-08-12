@@ -1,7 +1,7 @@
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
 const proPic = require('../pictures/FullSizeR.jpg');
-const howdyHack2 = require('../pictures/howdyhack2.jpg');
+const howdyHack = require('../pictures/howdyhack.jpg');
 const tamuHack = require('../pictures/tamuhack.jpg');
 
 type ItemProps = {
@@ -24,7 +24,7 @@ export default function ImageCarousel() {
             alt: "Professional picture of Obinna Nwakwue"
         },
         {
-            img: howdyHack2,
+            img: howdyHack,
             alt: "Obinna Nwakwue at HowdyHack 2023"
         },
         {
