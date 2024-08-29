@@ -7,6 +7,7 @@ const website = require('../pictures/website.png');
 const npcroom = require('../pictures/npcroom.png');
 const swipeTern = require('../pictures/swipetern.png');
 const npcroomUpdate = require('../pictures/login-screen.png');
+const tutoring = require('../pictures/tutoring.jpg');
 
 export default function Home() {
     return (
@@ -16,6 +17,11 @@ export default function Home() {
             <Typography variant="h5" m={2}
                 style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px', marginRight: '24px', marginBottom: '12px' }}>
+                <Highlight header="A Tutor and a Peer Teacher!" image={tutoring} alt="Stock tutoring image"
+                    text="This semeseter, I began my roles as a tutor for Texas A&M's Math Learning Center (MLC) and a peer teacher for
+                    ENGR 102, the introductory engineering class at Texas A&M. I love getting opportunities to teach because helping others
+                    learn concepts is highly rewarding. As a MLC tutor, I get to help students with calculus 3, and as a peer teacher, I get to help
+                    students learn fundamental programming and engineering principles as they learn to code in Python." date="23 August 2024" />
                 <Highlight header="NPCRoom deployed!" image={npcroomUpdate} alt="NPCRoom login screen"
                     text="I am proud to announce that my flagship Aggie Coding Club project, NPCRoom, has finally been deployed! I plan to add registration, conversation saving, and more in 
                     future iterations of the project. Check it out at npcroom.vercel.app (link is in Projects). 

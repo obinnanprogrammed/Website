@@ -26,11 +26,15 @@ export default function About() {
                         chapter of the National Society of Black Engineers.
                     </Typography>
                     <Typography variant="body1">
+                        Obinna is also a Peer Teacher (PT) for ENGR 102, the Python Computation Lab class at Texas A&M. He helps 
+                        students learn about fundamental programming and engineering principles as they learn to program in Python.
+                    </Typography>
+                    <Typography variant="body1">
                         Obinna enjoys developing projects that help other people out. Notably, he helped develop 
                         Reveille Rewards, the winner of the "Best Small Business Hack" at HowdyHack 2023. 
                         The web application rewards users for shopping at small businesses. Currently, he is working
                         on his "ScalesGalore!" project, which aims to provide beginning musicians an interactive
-                        dictionary that can help them learn and practice musical scales.
+                        dictionary that helps them learn, practice, and master musical scales.
                     </Typography>
                     <Typography variant="body1">
                         Outside of computer science, Obinna enjoys playing and composing music. He has composed several
