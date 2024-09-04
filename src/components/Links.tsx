@@ -26,7 +26,7 @@ export default function Links() {
                             <LinkComp icon={LinkedIn} title="LinkedIn" link="https://www.linkedin.com/in/obinwa05" backgroundcolor="blue" />
                         </Box>
                         <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", padding: '8px' }}>
-                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/1xo-jYNC3ZYm-s7wJbfO_q5A7bA-7ohcQ/view?usp=sharing" backgroundcolor="#34ebe8" />
+                            <LinkComp icon={Resume} title="Resume" link="https://drive.google.com/file/d/13b4Em92EfHsq55lipPSkKv-YsdWzs5jc/view?usp=sharing" backgroundcolor="#34ebe8" />
                             <LinkComp icon={Email} title="Email" link="mailto:obinnanwakwue10@gmail.com" backgroundcolor="green" />
                         </Box>
                     </Box>
