@@ -1,21 +1,30 @@
-import { AppBar, Toolbar, Typography, createTheme, ThemeProvider, Box } from '@mui/material';
-
 export default function Footer() {
+    const links = [
+        ["icons8-document.svg", "https://drive.google.com/file/d/1l3TYuxRnGCWjuciCExCcH1BFoW9TbGbQ/view?usp=sharing"],
+        ["iconmonstr-linkedin-4.svg", "https://www.linkedin.com/in/obinwa05"],
+        ["icons8-github.svg", "https://www.github.com/obinnanprogrammed"],
+        ["email-svgrepo-com.svg", "mailto:obinnanwakwue10@gmail.com"],
+        ["icons8-youtube.svg", "https://www.youtube.com/channel/UC68UbNT1KakmlH7I4SrSXhA"],
+        ["icons8-instagram.svg", "https://www.instagram.com/obi_wan_awesome20/"]
+    ];
     return (
-        <ThemeProvider theme={theme}>
-            <AppBar position="static" style={{ backgroundColor: "rgb(0, 0, 55)"}} elevation={0}>
-                <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                        <Typography variant="body2">© 2024 Obinna Nwakwue</Typography>
-                    </Box>
-                </Toolbar>
-            </AppBar>
-        </ThemeProvider>
+        <>
+            <div className="relative bottom-0 w-full p-4 items-center">
+                <div className="flex justify-around">
+                    <div className="flex justify-center mr-2">
+                        <nav className="flex space-x-4 items-center">
+                            {
+                                links.map(([imgLink, url]) => (
+                                    <a key={imgLink} href={url}>
+                                        <img src={require(`../pictures/${imgLink}`).default} />
+                                    </a>
+                                ))
+                            }
+                        </nav>
+                    </div>
+                    {<div className="text-sm md:text-base text-white">© 2024 Obinna Nwakwue</div>}
+                </div>
+            </div>
+        </>
     )
 }
-
-const theme = createTheme({
-    typography: {
-        fontFamily: "Maven Pro"
-    }
-});

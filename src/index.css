@@ -1,13 +1,9 @@
-body {
-  margin: 0;
-  font-family: 'Maven Pro';
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(0, 0, 55);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Fira Sans';
+  color: white;
+  background-color: rgb(0, 0, 32);
 }

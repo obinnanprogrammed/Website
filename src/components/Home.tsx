@@ -1,40 +1,31 @@
 import Header from './Header';
 import Footer from './Footer';
-import Highlight from './Highlight';
-import { Box, Typography } from '@mui/material';
-
-const website = require('../pictures/website.png');
-const npcroom = require('../pictures/npcroom.png');
-const swipeTern = require('../pictures/swipetern.png');
-const npcroomUpdate = require('../pictures/login-screen.png');
-const tutoring = require('../pictures/tutoring.jpg');
 
 export default function Home() {
     return (
         <>
             <Header />
-            <Typography variant="h3" style={{ color: "white", textAlign: "center", margin: '3%', fontWeight: "bold" }}>welcome, you awesome person!</Typography>
-            <Typography variant="h5" m={2}
-                style={{ color: "white", fontWeight: "bold", fontStyle: "italic", textDecoration: "underline" }}>Highlights</Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '32px', marginRight: '24px', marginBottom: '12px' }}>
-                <Highlight header="A Tutor and a Peer Teacher!" image={tutoring} alt="Stock tutoring image"
-                    text="This semeseter, I began my roles as a tutor for Texas A&M's Math Learning Center (MLC) and a peer teacher for
-                    ENGR 102, the introductory engineering class at Texas A&M. I love getting opportunities to teach because helping others
-                    learn concepts is highly rewarding. As a MLC tutor, I get to help students with calculus 3, and as a peer teacher, I get to help
-                    students learn fundamental programming and engineering principles as they learn to code in Python." date="23 August 2024" />
-                <Highlight header="NPCRoom deployed!" image={npcroomUpdate} alt="NPCRoom login screen"
-                    text="I am proud to announce that my flagship Aggie Coding Club project, NPCRoom, has finally been deployed! I plan to add registration, conversation saving, and more in 
-                    future iterations of the project. Check it out at npcroom.vercel.app (link is in Projects). 
-                    Use username: sample and password: 12345 for login. Registration support will be added at a later time." date="17 May 2024" />
-                <Highlight header="Website launched!" image={website} alt="Obinna Nwakwue's website"
-                    text="I have launched my website! Come see my projects, accomplishments, and aspirations!" date="12 March 2024" />
-                <Highlight header="Season 2 of NPCRoom!" image={npcroom} alt="NPCRoom!"
-                    text="I began the second round of my signature Aggie Coding Club project, NPCRoom! This time, it is a learning-based project
-                    where students will learn full-stack web development with React, Java, Spring Boot, and MongoDB!" date="23 February 2024" />
-                <Highlight header="TAMUhack X!" image={swipeTern} alt="TAMUhack X!"
-                    text="I competed in the tenth anniversary TAMUhack competition alongside my friends Peter Phan, Sophia Phu, and Jyo Madhavarapu.
-                    Together we created SwipeTern, an app that allows students and internship recruiters to swipe on each other, match, and communicate easier." date="27-28 January 2024" />
-            </Box>
+            <div className="my-3 lg:my-12">
+                <h1 className="text-left text-xl md:text-4xl lg:text-5xl font-bold animate-fadeLeft">Welcome, you awesome person!</h1>
+            </div>
+            <div className="flex flex-col lg:flex-row justify-center items-top">
+                <div className="size-7/12 md:size-1/2 mt-4 lg:mt-0 lg:mr-8 mb-4 lg:mb-0 self-center animate-fadeUp lg:animate-fadeLeft">
+                    <img src={require("../pictures/howdyhack.jpg").default}
+                        alt="Obinna Nwakwue at HowdyHack2023" />
+                </div>
+                <div className="self-center lg:self-start text-left max-w-prose space-y-3 animate-fadeDown lg:animate-fadeRight">
+                    <h1 className="text-xl md:text-3xl font-bold">My name is Obinna...</h1>
+                    <p>...and I am an aspiring software engineer. 
+                        My specialties include full-stack development, app development, music technology, and education.</p>
+                    <ul>
+                        <li>Want to see my accomplishments? Click Highlights.</li>
+                        <li>Want to see more about me? Click About.</li>
+                        <li>Want to see my projects? Click Projects.</li>
+                        <li>Want to contact me? Click any of the icons below 
+                            or email me at <a href="mailto:obinnanwakwue10@gmail.com">obinnanwakwue10@gmail.com</a>.</li>
+                    </ul>
+                </div>
+            </div>
             <Footer />
         </>
     )

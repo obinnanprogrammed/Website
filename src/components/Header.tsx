@@ -1,56 +1,99 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, createTheme, ThemeProvider, Button, Box } from '@mui/material';
-const logo = require('../pictures/logo.png');
+import { useState } from 'react';
+import { clsx } from 'clsx';
 
+const logo = require('../pictures/logo-navbar.png').default;
 
 export default function Header() {
-  const navigate = useNavigate();
-  const [large, setLarge] = useState<boolean>(window.innerWidth > 1024);
-  const [medium, setMedium] = useState<boolean>(window.innerWidth > 760);
-  
-  const updateSize = () => {
-    setLarge(window.innerWidth > 1024);
-    setMedium(window.innerWidth > 760);
-  }
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("resize", updateSize);
-    return () => { window.removeEventListener("resize", updateSize); }
-  })
+  const links = [
+    ['Highlights', '/highlights'],
+    ['About', '/about'],
+    ['Projects', '/projects']
+  ];
+  
+  const sidebarClass = clsx(
+    "transition-right duration-500 h-screen fixed top-0 bg-white z-20 w-40 shadow-lg",
+    {
+      "-right-80": !open,
+      "right-0": open,
+    }
+  );
+
+  const overlayClass = clsx(
+    "fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-500 z-10",
+    {
+      "opacity-0 pointer-events-none": !open,
+      "opacity-100": open,
+    }
+  );
+
   return (
-    <ThemeProvider theme={theme}>
-      <AppBar position="static" style={{ backgroundColor: "rgb(0, 0, 55)"}} elevation={0}>
-        <Toolbar style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-          <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
-            <img src={logo} alt="Obinna Nwakwue logo" style={{ width: '20%', height: '20%' }} />
-            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Typography variant={medium ? "h2" : "h5"}>Obinna Nwakwue</Typography>
-              <Typography variant={medium ? "h5" : "body2"} style={{ fontStyle: "italic" }}>helping others out since 2005</Typography>
-            </Box>
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <AppBar position="static" color="default" style={{ backgroundColor: "rgb(0, 0, 55)" }} elevation={0}>
-        <Toolbar sx={{ alignItems: "center"}}>
-          <Box sx={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
-              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/"); }}>Home</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
-              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/about"); }}>About</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
-              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/projects"); }}>Projects</Button>
-            <Button variant="contained" sx={{ bgcolor: "#FFAE42", color: "black", boxShadow: '-5px 5px 8px #0000FF', 
-              ':hover': { bgcolor: '#000060', color: 'white', boxShadow: '-5px 5px 8px #FFAE42' } }} onClick={() => { navigate("/links"); }}>Links</Button>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </ThemeProvider>
+    <>
+      <div className="max-h-16 flex justify-between items-center">
+        <div className="flex text-white items-center">
+          <a href="/">
+            <img className="h-auto max-h-16 w-auto object-contain" src="../../logo.png" alt="Logo"/>
+          </a>
+          <p className="md:text-3xl">Obinna Nwakwue</p>
+        </div>
+        <div className="text-white justify-center">
+          <nav className="hidden md:flex space-x-4">
+            {
+              links.map(([title, url]) => (
+                <a key={title} href={url} className="rounded-lg px-3 py-2 text-white font-medium hover:bg-white hover:text-black">{title}</a>
+              ))
+            }
+          </nav>
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={() => setOpen(!open)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div className={overlayClass} onClick={() => setOpen(false)}>
+      </div>
+      <div className={sidebarClass}>
+        <button className="md:hidden text-black focus:outline-none mt-2" 
+          onClick={() => setOpen(!open)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round"
+              strokeWidth={2} d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <nav className="mt-2 space-y-2 px-4 pb-4">
+          {links.map(([title, url]) => (
+            <a key={title} href={url} 
+              className="block px-3 py-2 rounded-lg text-black font-medium hover:bg-navy hover:text-white transition duration-300"
+            >
+              {title}
+            </a>
+          ))}
+        </nav>
+        <a href="/">
+          <img src={logo} alt={logo} className="object-size-down max-w-50" />
+        </a>
+      </div>
+    </>
   );
 };
 
-const theme = createTheme({
-  typography: {
-    fontFamily: "Maven Pro"
-  }
-});

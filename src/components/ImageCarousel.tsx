@@ -1,6 +1,6 @@
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
-const proPic = require('../pictures/FullSizeR.jpg');
+const proPic = require('../pictures/IMG_8972 (1) (2).jpg');
 const howdyHack = require('../pictures/howdyhack.jpg');
 const tamuHack = require('../pictures/tamuhack.jpg');
 
@@ -12,7 +12,7 @@ type ItemProps = {
 function Item({ image, altText }: ItemProps) {
     return (
         <Paper>
-            <img src={image} alt={altText} style={{ width: '100%', height: 'auto' }} />
+            <img src={image} alt={altText} className="w-auto" />
         </Paper>
     )
 }

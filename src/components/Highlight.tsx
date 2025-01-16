@@ -1,9 +1,3 @@
-/**
- * Add background to each highlight and matte/elevate it
- */
-import Typography from '@mui/material/Typography';
-import { Box } from '@mui/material';
-
 type HighlightProps = {
     header: string,
     image: string,
@@ -13,14 +7,13 @@ type HighlightProps = {
 }
 export default function Highlight({ header, image, alt, text, date }: HighlightProps) {
     return (
-        <Box ml={2} sx={{ display: 'inline-flex', flexDirection: 'row', alignItems: 'flex-start', 
-            bgcolor: "#000060", padding: '8px', gap: '8px', borderRadius: '8px', boxShadow: '-10px 10px 12px #0000FF' }}>
-            {image && <img src={image} alt={alt} style={{ width: '25%', height: '15%' }} />}
-            <Box sx={{ display: 'inline-flex', flexDirection: 'column' }}>
-                <Typography variant="body1" style={{ fontStyle: "italic" }}>{date}</Typography>
-                {header && <Typography variant="h5">{header}</Typography>}
-                <Typography variant="body1">{text}</Typography>
-            </Box>
-        </Box>
+        <div className="flex items-start bg-columbia rounded-lg p-4">
+            {image && <img src={image} alt={alt} className="object-size-down max-w-md mr-2 rounded-lg"></img>}
+            <div className="text-left text-black">
+                <p className="italic">{date}</p>
+                {header && <p className="text-xl font-bold">{header}</p>}
+                <p className="max-w-prose">{text}</p>
+            </div>
+        </div>
     )
 }
