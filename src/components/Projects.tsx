@@ -2,10 +2,10 @@ import Header from './Header';
 import Footer from './Footer';
 import ProjectComp from './ProjectComp';
 
-const scalesGalore = require('../pictures/ScalesGalore-logo.png');
-const swipeTern = require('../pictures/swipetern.png');
-const npcroom = require('../pictures/npcroom.png');
-const revRewards = require('../pictures/revrewards.jpg');
+const scalesGalore = require('../pictures/ScalesGalore-logo.png').default;
+const swipeTern = require('../pictures/swipetern.png').default;
+const npcroom = require('../pictures/npcroom.png').default;
+const revRewards = require('../pictures/revrewards.jpg').default;
 
 export default function Projects() {
     const projLinks = {
