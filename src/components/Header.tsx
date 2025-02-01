@@ -8,9 +8,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    ['Highlights', '/highlights'],
-    ['About', '/about'],
-    ['Projects', '/projects']
+    ['Highlights', 'highlights'],
+    ['About', 'about'],
+    ['Projects', 'projects']
   ];
   
   const sidebarClass = clsx(
