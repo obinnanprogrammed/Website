@@ -7,14 +7,15 @@ import Highlights from "./components/Highlights";
 
 function App() {
   return (
-      <BrowserRouter>
+    <h1>Check</h1>
+      {/*<BrowserRouter>
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="/highlights" element={<Highlights />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter>*/}
   );
 }
 
