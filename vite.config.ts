@@ -7,7 +7,6 @@ export default defineConfig({
   server: {
     open: true, // Automatically open the app in the browser
   },
-  base: '/Website/',
   build: {
     outDir: 'dist', // Output directory for the build files
   },
