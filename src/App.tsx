@@ -7,7 +7,7 @@ import Highlights from "./components/Highlights";
 
 function App() {
   return (
-    <HashRouter basename="/Website">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="highlights" element={<Highlights />} />
