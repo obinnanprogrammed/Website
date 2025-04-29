@@ -1,6 +1,6 @@
 export default function Footer() {
     const links = [
-        ["icons8-document.svg", "https://drive.google.com/file/d/1l3TYuxRnGCWjuciCExCcH1BFoW9TbGbQ/view?usp=sharing"],
+        ["icons8-document.svg", "https://drive.google.com/file/d/1Qj2XTxarZvqt0shnhxqD03A0U8AXOzuR/view?usp=sharing"],
         ["iconmonstr-linkedin-4.svg", "https://www.linkedin.com/in/obinwa05"],
         ["icons8-github.svg", "https://www.github.com/obinnanprogrammed"],
         ["email-svgrepo-com.svg", "mailto:obinnanwakwue10@gmail.com"],
