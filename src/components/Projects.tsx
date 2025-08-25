@@ -7,7 +7,6 @@ const scalesGalore = require('../images/ScalesGalore-logo.png').default;
 const npcroom = require('../images/npcroom.png').default;
 const revRewards = require('../images/revrewards.jpg').default;
 
-// TODO: Cut SwipeTern, add School Tool CLI
 export default function Projects() {
     const projLinks = {
         schoolTool: [],
@@ -33,14 +32,14 @@ export default function Projects() {
     return (
         <>
             <Header />
-            <div className="flex flex-col lg:flex-row justify-center my-3">
-                <div className="lg:ml-6 order-first lg:order-last self-center lg:self-start">
-                    <p className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 lg:mb-0 animate-fadeLeft lg:animate-fadeRight">projects</p>
+            <div className="flex flex-col justify-center my-3">
+                <div className="order-first self-center">
+                    <p className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 animate-fadeLeft">projects</p>
                 </div>
-                <div className="block lg:hidden inline-block min-w-[1em] h-0.5 self-stretch 
+                <div className="block inline-block min-w-[1em] h-0.5 self-stretch 
                     bg-neutral-100 dark:bg-white/10 self-center"></div>
                 
-                <div className="flex flex-col items-center space-y-4 mt-6 lg:mr-6 self-center animate-fadeDown lg:animate-fadeLeft">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-4 flex flex-col items-center space-y-4 mt-6 self-center animate-fadeDown">
                     <ProjectComp image={schoolTool} title="School Tool"
                         description="A command-line tool to help students manage their classes, assignments, exams, and more."
                         links={projLinks.schoolTool} techStack={projStacks.schoolTool} />
@@ -56,8 +55,6 @@ export default function Projects() {
                         and earn redeemable tokens. Won Best Small Business Hack at HowdyHack 2023." 
                         links={projLinks.revRewards} techStack={projStacks.revRewards} />
                 </div>
-                <div className="hidden lg:block inline-block min-h-[1em] w-0.5 self-stretch 
-                    bg-neutral-100 dark:bg-white/10 self-center"></div>
             </div>
             <Footer />
          </>

@@ -12,6 +12,8 @@ export default function ProjectComp({ image, title, description, links, techStac
         "React Native": "https://reactnative.dev/docs/tutorial",
         "MaterialUI": "https://mui.com/material-ui/getting-started/learn/",
         "ChakraUI": "https://v1.chakra-ui.com/guides/first-steps",
+        "Python": "https://www.python.org/about/gettingstarted/",
+        "Django": "https://docs.djangoproject.com/en/4.2/intro/tutorial01/",
         "Java": "https://www.codecademy.com/learn/learn-java",
         "Spring Boot": "https://spring.io/guides/gs/spring-boot",
         "MongoDB": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",

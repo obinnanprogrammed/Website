@@ -4,7 +4,6 @@ type HighlightProps = {
     date: string
 }
 
-// I don't think I'm going to use images for the highlights anymore. Too many assets to save. Also, the images should have been gitignored.
 export default function Highlight({ header, text, date }: HighlightProps) {
     return (
         <div className="flex items-start bg-columbia rounded-lg p-4">

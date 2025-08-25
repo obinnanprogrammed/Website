@@ -1,6 +1,4 @@
-/**
- * Make width changes for mobile highlights independent from one another. I'm not sure if this is even a concern.
- */
+
 
 import { useState } from 'react';
 type HighlightProps = {
