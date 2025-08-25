@@ -5,13 +5,11 @@
 import { useState } from 'react';
 type HighlightProps = {
     header: string,
-    image: string,
-    alt: string,
     text: string,
     date: string
 }
 
-export default function MobileHighlight({ header, image, alt, text, date }: HighlightProps) {
+export default function MobileHighlight({ header, text, date }: HighlightProps) {
     const [topVisible, setTopVisible] = useState(true);
 
     
@@ -20,7 +18,6 @@ export default function MobileHighlight({ header, image, alt, text, date }: High
             {topVisible && 
             (<div onClick={() => setTopVisible(false)} className="flex items-start bg-columbia rounded-lg p-4 hover:shadow-lg 
                 hover:shadow-[#D9D9D9]">
-                {image && <img src={image} alt={alt} className="object-size-down max-w-28 mr-2 rounded-lg" />}
                 <div className="text-left text-black">   
                     <p>{date}</p>
                     <h2 className="text-lg font-bold">{header}</h2>

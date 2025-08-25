@@ -3,6 +3,7 @@ import Footer from './Footer';
 import ImageCarousel from './ImageCarousel';
 
 export default function About() {
+    // TODO: Retool, accordions somewhere....
     return (
         <>
             <Header />
@@ -11,21 +12,29 @@ export default function About() {
             </div>
             <div className="flex flex-col lg:flex-row justify-center items-top">
                 <div className="max-w-prose space-y-3 self-center lg:text-left animate-fadeDown lg:animate-fadeRight">
-                    <p>I am a sophomore computer science student at Texas A&M University. My primary interests are the 
-                        use of software development in music technology and education.</p>
-                    <p>At Texas A&M, I am most involved in Aggie Coding Club, where I have served as a project manager
-                        for three semesters. My project, NPCRoom, teaches students about full-stack web development through
-                        the creation of an NPC chat room. The project won ACC's Best Learning-Focused Project for Fall 2024.</p>
-                    <p>Other organizations I am a part of include Aggie Competitive Programming Club, Texas A&M Computing Society 
-                        (Texas A&M's student chapter of the Assocation for Computing Machinery), and the National Society of Black Engineers.</p>
-                    <p>I love helping other people out, as is evident through the several software-based projects I have worked on (click Projects for more information)
-                        as well as my teaching-related positions. I was a peer teacher for the Engineering Computation Lab
-                        course (ENGR 102) at Texas A&M and will be a TA for the data structures course (CSCE 221)
-                        in Spring 2025. I also work as a Help Session Tutor for calculus 3 (MATH 251) for Texas A&M's Math Learning Center.
+                    <p>I am a junior Computer Science student at Texas A&M University. I am primarily interested
+                        in the use of software engineering in music technology and education.
                     </p>
-                    <p>Outside of computer science, I enjoy music and Pokémon. I am a member of the Texas A&M University Trombone Choir and
-                        compose in my free time.
-                    </p>
+                    <p>In Summer 2025, I interned with Niantic as a Software Engineering Intern.</p>
+                    <p>Currently, I'm involved in...</p>
+                    <ul className="list-disc list-inside">
+                        <li>Aggie Coding Club
+                            <ul className="list-disc list-inside">
+                                <li className="ml-6">...as a project manager (2023-2025)</li>
+                                <li className="ml-6">...as a Workshops Officer (2025-present)</li>
+                            </ul>
+                        </li>
+                        <li>Aggie Competitive Programming Club</li>
+                        <li>Texas A&M University Trombone Choir</li>
+                    </ul>
+                
+                    <p>I love teaching and helping others out! My teaching posts include...</p>
+                    <ul className="list-disc list-inside">
+                        <li>Peer Teacher, ENGR 102: Engineering Lab 1 - Computation (2024)</li>
+                        <li>Undergraduate TA, CSCE 221: Data Structures and Algorithms (2025-present)</li>
+                        <li>TAMU Math Learning Center Help Session Tutor, MATH 251: Engineering Mathematics III (2024-present)</li>
+                    </ul>
+                    <p>Outside of computer science, I enjoy music and Pokémon. I am a composer and arranger, and I play trombone.</p>
                     <p>Find me on <a className="underline" href="https://www.instagram.com/obi_wan_awesome20">Instagram</a> or 
                         on <a className="underline" href="https://www.youtube.com/channel/UC68UbNT1KakmlH7I4SrSXhA">Youtube</a>!</p>
                 </div>

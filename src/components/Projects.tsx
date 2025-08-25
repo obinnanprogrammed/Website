@@ -2,19 +2,17 @@ import Header from './Header';
 import Footer from './Footer';
 import ProjectComp from './ProjectComp';
 
-const scalesGalore = require('../pictures/ScalesGalore-logo.png').default;
-const swipeTern = require('../pictures/swipetern.png').default;
-const npcroom = require('../pictures/npcroom.png').default;
-const revRewards = require('../pictures/revrewards.jpg').default;
+const schoolTool = require('../images/school-tool.png').default;
+const scalesGalore = require('../images/ScalesGalore-logo.png').default;
+const npcroom = require('../images/npcroom.png').default;
+const revRewards = require('../images/revrewards.jpg').default;
 
+// TODO: Cut SwipeTern, add School Tool CLI
 export default function Projects() {
     const projLinks = {
+        schoolTool: [],
         scalesGalore: [
             { url: "https://www.github.com/obinnanprogrammed/ScalesGalore", text: "Github" }
-        ],
-        swipeTern: [
-            { url: "https://www.github.com/obinnanprogrammed/tamuhack2024", text: "Github"},
-            { url: "https://devpost.com/software/lalala-kzb9fw", text: "Devpost" }
         ],
         npcroom: [
             { url: "https://www.github.com/obinnanprogrammed/NPCRoom", text: "Github" },
@@ -27,10 +25,10 @@ export default function Projects() {
     }
 
     const projStacks = {
-        scalesGalore: [ "React Native", "Vexflow", "Express", "Node.js" ],
-        swipeTern: [ "React Native", "Firebase", "Expo" ],
-        npcroom: [ "React", "MaterialUI", "Spring Boot", "MongoDB" ],
-        revRewards: [ "React", "ChakraUI", "Django", "Tesseract" ]
+        scalesGalore: ["React Native", "Vexflow", "Express", "Node.js"],
+        npcroom: ["React", "MaterialUI", "Spring Boot", "MongoDB"],
+        revRewards: ["React", "ChakraUI", "Django", "Tesseract"],
+        schoolTool: ["Python", "Google Cloud Platform"]
     }
     return (
         <>
@@ -43,12 +41,12 @@ export default function Projects() {
                     bg-neutral-100 dark:bg-white/10 self-center"></div>
                 
                 <div className="flex flex-col items-center space-y-4 mt-6 lg:mr-6 self-center animate-fadeDown lg:animate-fadeLeft">
+                    <ProjectComp image={schoolTool} title="School Tool"
+                        description="A command-line tool to help students manage their classes, assignments, exams, and more."
+                        links={projLinks.schoolTool} techStack={projStacks.schoolTool} />
                     <ProjectComp image={scalesGalore} title="ScalesGalore!"
                         description="An interactive scale dictionary for beginning musicians. Currently in the works."
                         links={projLinks.scalesGalore} techStack={projStacks.scalesGalore} />
-                    <ProjectComp image={swipeTern} title="SwipeTern" 
-                        description="An app that eases communication between students and internship recruiters. 
-                        Demonstrated at TAMUhack X." links={projLinks.swipeTern} techStack={projStacks.swipeTern} />
                     <ProjectComp image={npcroom} title="NPCRoom" 
                         description="My flagship Aggie Coding Club Project. Teaches team members
                         full-stack web development with React, Spring Boot, and MongoDB by creating a simple 

@@ -15,12 +15,11 @@ export default function ProjectComp({ image, title, description, links, techStac
         "Java": "https://www.codecademy.com/learn/learn-java",
         "Spring Boot": "https://spring.io/guides/gs/spring-boot",
         "MongoDB": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
-        "Firebase": "https://firebase.google.com/docs/functions/get-started?gen=2nd",
-        "Expo": "https://docs.expo.dev/tutorial/create-your-first-app/",
         "Vexflow": "https://github.com/0xfe/vexflow/wiki/Tutorial",
         "Tesseract": "https://nanonets.com/blog/ocr-with-tesseract/",
         "Node.js": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
-        "Express": "https://expressjs.com/en/starter/installing.html"
+        "Express": "https://expressjs.com/en/starter/installing.html",
+        "Google Cloud Platform": "https://cloud.google.com/docs",
     }
     return (
         <div className="flex flex-col items-center bg-columbia rounded-lg max-w-xs md:max-w-prose p-4">

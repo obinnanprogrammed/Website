@@ -1,8 +1,9 @@
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
-const proPic = require('../pictures/IMG_8972 (1) (2).jpg');
-const howdyHack = require('../pictures/howdyhack.jpg');
-const tamuHack = require('../pictures/tamuhack.jpg');
+const proPic = require('../images/pro-pic.jpg');
+const tamuHack = require('../images/tamuhack.jpg');
+const accPic = require('../images/acc-presentation.jpg');
+const internshipPic = require('../images/niantic-pic.jpg');
 
 type ItemProps = {
     image: string,
@@ -17,6 +18,7 @@ function Item({ image, altText }: ItemProps) {
     )
 }
 
+// TODO: redo this, use Flowbite or something similar (Material Tailwind?? Looks a little simpler, but can we control interval?)
 export default function ImageCarousel() {
     const items = [
         {
@@ -24,12 +26,16 @@ export default function ImageCarousel() {
             alt: "Professional picture of Obinna Nwakwue"
         },
         {
-            img: howdyHack,
-            alt: "Obinna Nwakwue at HowdyHack 2023"
+            img: accPic,
+            alt: "Obinna Nwakwue introduces his Aggie Coding Club project at a meeting"
         },
         {
             img: tamuHack,
             alt: "Obinna Nwakwue and his TAMUhack X team"
+        },
+        {
+            img: internshipPic,
+            alt: "Obinna Nwakwue at the Niantic office in Sunnyvale, CA"
         }
     ]
     return (

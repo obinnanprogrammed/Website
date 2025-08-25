@@ -1,6 +1,6 @@
 export default function Footer() {
     const links = [
-        ["icons8-document.svg", "https://drive.google.com/file/d/1Qj2XTxarZvqt0shnhxqD03A0U8AXOzuR/view?usp=sharing"],
+        ["icons8-document.svg", "https://drive.google.com/file/d/1VNnqybhBsf5aDLY1P_f0MpbwMrcnEJpP/view?usp=sharing"],
         ["iconmonstr-linkedin-4.svg", "https://www.linkedin.com/in/obinwa05"],
         ["icons8-github.svg", "https://www.github.com/obinnanprogrammed"],
         ["email-svgrepo-com.svg", "mailto:obinnanwakwue10@gmail.com"],
@@ -16,13 +16,13 @@ export default function Footer() {
                             {
                                 links.map(([imgLink, url]) => (
                                     <a key={imgLink} href={url}>
-                                        <img src={require(`../pictures/${imgLink}`).default} />
+                                        <img src={require(`../images/${imgLink}`).default} />
                                     </a>
                                 ))
                             }
                         </nav>
                     </div>
-                    {<div className="text-sm md:text-base text-white">© 2024 Obinna Nwakwue</div>}
+                    {<div className="text-sm md:text-base text-white">© Obinna Nwakwue</div>}
                 </div>
             </div>
         </>

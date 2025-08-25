@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { clsx } from 'clsx';
 
-const logo = require('../pictures/logo.png').default;
-const logoNav = require('../pictures/logo-navbar.png').default;
+const logo = require('../images/logo.png').default;
+const logoNav = require('../images/logo-navbar.png').default;
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -36,7 +36,7 @@ export default function Header() {
           <a href="/">
             <img className="h-auto max-h-16 w-auto object-contain" src={logo} alt="Logo" />
           </a>
-          <p className="md:text-3xl">Obinna Nwakwue</p>
+          <p className="md:text-3xl">obinna nwakwue</p>
         </div>
         <div className="text-white justify-center">
           <nav className="hidden md:flex space-x-4">
